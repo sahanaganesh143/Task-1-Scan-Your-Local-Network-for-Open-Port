@@ -6,6 +6,9 @@ To find local ip address use Windows Command Prompt and type:
 
 >ipconfig
 
+
+(output will be shown similar to "ipconfig." image attatched.)
+
 The IPV4 address and Subnet Mask address are the required values to inspect ports.
 
 
