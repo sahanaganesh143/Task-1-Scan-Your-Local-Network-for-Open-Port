@@ -1,0 +1,11 @@
+import ipaddress
+
+ip = "192.168.111.0" #enter your IP address
+mask = "255.255.255.0" #enter your subnet mask
+
+
+net = ipaddress.ip_network(f"{ip}/{mask}", strict=False)
+print("Network:", net.network_address)
+print("CIDR   :", f"{net.network_address}/{net.prefixlen}")
+print("Broadcast:", net.broadcast_address)
+print("Usable hosts:", net.num_addresses - 2 if net.num_addresses > 2 else net.num_addresses)
